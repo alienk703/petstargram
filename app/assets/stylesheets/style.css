@@ -1,0 +1,88 @@
+hgroup {
+font-family: 'Lobster', cursive;
+}
+
+.site-name {
+	margin:0;
+}
+
+.slogan {
+	margin: 0;
+}
+
+ul.menu {
+	font-family: 'Lobster', cursive;
+	float: center;
+	display: block;
+	margin: center;
+	overflow: hidden;
+	padding: 0 2%;
+	width: 96%;
+}
+
+ul.menu li {
+	float: left;
+	height: 2em;
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0 10% 0 0;
+	text-align: center;
+}
+
+ul.menu li a:hover,
+ul.menu li a:focus  {
+  color: #000;
+}
+
+.cat_container{
+	padding: 2%;
+	float: left;
+	width: 200px;
+	font-family: 'Poiret One', cursive;
+	vertical-align: center;
+	text-align: center;
+}
+
+.cat_body{
+	font-size: 70%;
+}
+
+.dog_container{
+	padding: 2%;
+	font-family: 'Poiret One', cursive;
+	vertical-align: center;
+	text-align: center;
+}
+
+.dog_body{
+	font-size: 70%;
+}
+
+.other_container{
+	padding:2%;
+	float: right;
+	width: 200px;
+	font-family: 'Poiret One', cursive;
+	vertical-align: center;
+	text-align: center;
+}
+.other_body{
+	font-size: 70%;
+}
+
+img {
+	display: block;
+	border: 1px solid #333;
+	float: center;
+	height: 100px;
+	margin: auto;
+	width: 100px;
+}
+
+
+
+
+
+
+
