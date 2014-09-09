@@ -20,7 +20,7 @@ class PetsController < ApplicationController
 	end
 
 	def create
-		@pet = Pet.new(pet_params)
+		@pet = Pet.new pet_params
 		if @pet.save
 			redirect_to @pet
 		end
@@ -29,7 +29,7 @@ class PetsController < ApplicationController
 	def update
 		@pet = Pet.find( params[:id] )
 		if @pet.update(pet_params)
-			recirect_to @pet
+			redirect_to @pet
 		end
 	end
 
@@ -40,10 +40,10 @@ class PetsController < ApplicationController
 	end
 
 
-	# private
-	# def pet_params
-	# 	params.require(:)
-	# end
+	private
+	def pet_params
+		params.require(:pet).permit(:instagram_id, :kind, :name, :followers, :image_url)
+	end
 
 
 

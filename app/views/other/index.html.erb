@@ -23,15 +23,13 @@
   </ul>
 </nav>
 
-<div class="cats">
-<% @pet.where(:kind => "cat").each do |c| %>
-<%= image_tag(c.image_url) %>
-	<div class="catfollow">
-	<p>Name: <%= c.name %></p>
-	<p>Followers: <%= c.followers %></p>
-	<% end %>
-	</div>
-</div>
+
+<% @pet.where(:kind => "other").each do |o| %>
+<%= image_tag(o.image_url) %>
+<%= o.followers %>
+<% end %>
+
+
 
 
 

@@ -2,10 +2,11 @@ class CatController < ApplicationController
 
 	def index
 		@pet = Pet.all
-		# @profiles = Cat.profile
+
 	end
 
 	def show
+		@pet = Pet.find( params[:id])
 	end
 
 
