@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="animate.min.css">
 <link href="../../../assets/stylesheets/normalize.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="style">
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -8,12 +9,17 @@
 	<title>PetStargram</title>
 
 <hgroup>
+<!--   <div class="catani">
+  <div class="animated">
+  <img src="http://i.imgur.com/0RqcOXA.png" style="width:95px;height:85px">
+  </div>
+</div>   -->
  <h1 class="site-name"><a href="/">PetStargram</a></h1>
- <h3 class="slogan">The Cutest pets on Instagram!</h3>
-
+ <h3 class="slogan">The Cutest pets on Instagram!</h3> 
 </hgroup>
 </head>
 
+</div>  
 <nav class="mainmenu">
   <ul class="menu">
     <li><%= link_to 'Cats', cat_index_path %></li>
@@ -56,8 +62,29 @@
     </div> 
 </div>
 
+
+<div class="video_container">
+  <h1>Video of the month!</h1>
+<iframe width="400" height="300" src="//www.youtube.com/embed/p2H5YVfZVFw" frameborder="0" allowfullscreen></iframe>
+    <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+</div>
+
+<div class="petofmonth">
+  <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. 
+  </p>
+</div>
+
+
 <div class="new_pet">
   <%= link_to "Recommend a pet!", new_pet_path %>
+</div>
+ 
+
+
+
+
+
+
 
 </body>
 </html>

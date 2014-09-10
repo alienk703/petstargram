@@ -5,15 +5,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-
-  <%= link_to 'New Pet', new_pet_path %>
-</header>
 
 <% if user_signed_in? %>
 <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
 <% else %>
-<%= link_to "log in", new_user_session_path %>
+
+
+<%= link_to image_tag("http://i.imgur.com/0RqcOXA.png"), new_user_session_path, :style => "float: left; height: 80px; width: 90px;"%>
+
 <% end %>
 
 
@@ -23,3 +22,5 @@
 
 </body>
 </html>
+
+

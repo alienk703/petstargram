@@ -111,23 +111,69 @@ ul.menu li a:focus  {
 	font-size: 70%;
 }
 
+
+
+
 img {
 	display: block;
-	border: 1px solid #333;
+/*	border: 1px solid #333;*/
 	float: center;
 	height: 200px;
 	margin: auto;
 	width: 200px;
 }
 
+.animated{
+	-webkit-animation-name: shake;
+          animation-name: shake;
+    position: fixed;
+	height:0px;
+	width: 200px;
+}
+
 
 .cats {
+	border-radius: 20px;
   text-align: center;
+   display: block;
+   margin-right: 500px;
+   margin-top: 20px;
 }
 
 .dogs {
   text-align: center;
+  display: block;
+   margin-right: 500px;
+   margin-top: 20px;
 }
+
+.other {
+  display: block;
+   margin-right: 500px;
+   margin-top: 20px;
+}
+
+.petofmonth {
+	font-size: 110%;
+	font-family: 'Poiret One', cursive;
+	width: 400px;
+	padding :5%;
+	clear: both;
+	text-align: left;
+	margin: right;
+}
+
+.video_container {
+	font-size:110%;
+	font-family: 'Poiret One', cursive;
+	width: 500px;
+	padding: 4%;
+	float: center;
+	margin:right;
+}
+
+
+
 
 
 
