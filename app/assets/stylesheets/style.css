@@ -91,7 +91,7 @@ ul.menu li a:focus  {
 
 .cat_container{
 	font-size: 200%;
-	padding: 5%;
+	padding: 3%;
 	float: left;
 	width: 350px;
 	font-family: 'Poiret One', cursive;
@@ -132,11 +132,17 @@ ul.menu li a:focus  {
 
 }
 
+.rankhome {
+	height: 120%;
+	margin-top: 30px;
+	border:solid #9BE6FF;
+	border-radius: 10px;
+}
 
 .rankhome img {
 	border-radius:50%;
 	display: block;
-/*	border: 1px solid #333;*/
+	border: 1px solid #9BE6FF;
 	float: center;
 	height: 200px;
 	margin: auto;
@@ -189,26 +195,24 @@ ul.menu li a:focus  {
 	width: 300px;
 }
 
-.petofmonth {
-
-	float:right;
-	font-size: 110%;
-	font-family: 'Poiret One', cursive;
-	width: 400px;
-	padding :5%;
-	clear: both;
-	text-align: left;
-
-}
-
 .video_container {
-
+	margin: auto;
+	float: left;
 	font-size:110%;
 	font-family: 'Poiret One', cursive;
-	width: 500px;
+	width: 40%;
 	padding: 4%;
-	float: left;
+	text-align: left;
+}
 
+.petofmonth {
+	margin:auto;
+	float: right;
+	font-size: 110%;
+	font-family: 'Poiret One', cursive;
+	width: 40%;
+	padding :5%;
+	text-align: left;
 }
 
 
