@@ -6,9 +6,38 @@
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
+
+<div class="login_info">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <% if user_signed_in? %>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  <% else %>
+
+    <div class="grumpycat">
+      <div class='animated'>
+      <%= link_to image_tag("http://i.imgur.com/bkjD8ir.png"), new_user_session_path%>
+      </div>
+    </div>
+
+    <div class="maru">
+      <div class='animated'>
+      <%= link_to image_tag("http://i.imgur.com/kohcfwe.png"), new_user_registration_path%>
+      </div>
+    </div>
+
+  <% end %>
+</div>
+
+
+
 <div class="tophead">
   <head>
   	<title>PetStargram</title>
+
+
     <hgroup>
     <!--   <div class="catani">
       <div class="animated">
@@ -36,6 +65,7 @@
 <body>
 
 <div class="rankhome">
+  <h1>September Rankings!</h1>
     <div class="cat_container">
       	<img src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'>
       <h4> No.1 Cat! </h4>
@@ -46,16 +76,6 @@
       </div> 
    </div>
 
-  <div class="other_container">
-      <img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'>
-      <h4>No.1 Other Pet!</h4>
-      <h4><a href="#">Eddy & Rambo</a></h4>
-      <div class="other_body">
-        <p>Cats and Dogs aren't the only pets out there. Check out these group of bunnies Eddy, Rambo and Marbee. Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive(Owner)'s house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!
-      </div> 
-  </div>
-
-
   <div class="dog_container">
       <img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'>
       <h4>No.1 Dog!</h4>
@@ -64,7 +84,18 @@
         <p>The Japanese Shiba Inu Maru has close to million followers! The 7 year old Maru has a birthday coming up in October, and with Tuna closely chasing him from the no.2 spot, lets see if Maru can keep the crown for his birth month</p>
       </div> 
   </div>
+
+
+  <div class="other_container">
+      <img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'>
+      <h4>No.1 Other Pet!</h4>
+      <h4><a href="#">Eddy & Rambo</a></h4>
+      <div class="other_body">
+        <p>Cats and Dogs aren't the only pets out there. Check out these group of bunnies Eddy, Rambo and Marbee. Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive(Owner)'s house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!
+      </div> 
+  </div>
 </div>
+
 
 <div class="video_container">
   <h1>Video of the month!</h1>
@@ -78,11 +109,14 @@
   </p>
 </div>
 
-<!-- 
 <div class="new_pet">
+  <% if user_signed_in? %>
   <%= link_to "Recommend a pet!", new_pet_path %>
+  <%= link_to 'edit', edit_tshirt_path(t) %>
+  <%= link_to 'delete', t, method: :delete %>
+  <% end %>
 </div>
-  -->
+
 
 
 </body>

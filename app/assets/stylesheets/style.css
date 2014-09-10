@@ -1,5 +1,4 @@
 body {
-
 	background-image:url("http://i.imgur.com/cZxYU3M.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,13 +7,22 @@ body {
 
 .grumpycat img{
 	display: block;
+	float :left;
 	height: 80px;
 	width: 90px;
 }
 
-.grumpycat{
+/*.grumpycat{
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
             transform: rotate3d(0, 0, 1, -5deg);
+}*/
+
+.maru img {
+	margin-top: -10px;
+	display: inline;
+	float :left;
+	height: 80px;
+	width: 90px;
 }
 
 .tophead{
@@ -22,7 +30,6 @@ body {
 	float: center;
 	font-size: 300%;
 	text-align: center;
-	padding:2%;
 	font-family: 'Poiret One', strong;
 }
 
@@ -89,11 +96,34 @@ ul.menu li a:focus  {
   text-decoration:none;
 }
 
+/*TOP HALF*/
+.rankhome {
+	margin-top: 30px;
+	border:solid #9BE6FF;
+	border-radius: 10px;
+}
+
+.rankhome h1{
+	font-family: 'Poiret One', strong;
+	padding:1%;
+}
+
+.rankhome img {
+	float:right;
+	border-radius:50%;
+	display: block;
+	border: 1px solid #9BE6FF;
+	height: 200px;
+	/*margin: auto;*/
+	width: 200px;
+}
+
 .cat_container{
-	font-size: 200%;
-	padding: 3%;
+	margin: auto;
+	font-size: 150%;
+	padding: 2%;
 	float: left;
-	width: 350px;
+	width: 30%;
 	font-family: 'Poiret One', cursive;
 	vertical-align: center;
 	text-align: center;
@@ -104,11 +134,14 @@ ul.menu li a:focus  {
 }
 
 .dog_container{
-	font-size: 200%;
-	padding: 5%;
+	margin: auto;
+	float: left;
+	font-size: 150%;
+	padding: 2%;
 	font-family: 'Poiret One', cursive;
 	vertical-align: center;
 	text-align: center;
+	width: 30%;
 }
 
 .dog_body{
@@ -116,10 +149,11 @@ ul.menu li a:focus  {
 }
 
 .other_container{
-	font-size: 200%;
-	padding:5%;
-	float: right;
-	width: 350px;
+	margin:auto;
+	font-size: 150%;
+	padding:2%;
+	float: left;
+	width: 27%;
 	font-family: 'Poiret One', cursive;
 	vertical-align: center;
 	text-align: center;
@@ -127,27 +161,8 @@ ul.menu li a:focus  {
 .other_body{
 	font-size: 70%;
 }
+/*TOP HALF END*/
 
-.other img{
-
-}
-
-.rankhome {
-	height: 120%;
-	margin-top: 30px;
-	border:solid #9BE6FF;
-	border-radius: 10px;
-}
-
-.rankhome img {
-	border-radius:50%;
-	display: block;
-	border: 1px solid #9BE6FF;
-	float: center;
-	height: 200px;
-	margin: auto;
-	width: 200px;
-}
 
 /*.animated{
     position: fixed;
@@ -155,7 +170,7 @@ ul.menu li a:focus  {
 	width: 200px;
 }*/
 
-
+/*INDIVIDUAL PAGE*/
 .cats {
    border-radius: 20px;
    text-align: center;
@@ -194,8 +209,23 @@ ul.menu li a:focus  {
 	height: 300px;
 	width: 300px;
 }
+/*INDIVIDUAL PAGE END*/
 
+
+/*BOTTOM HALF*/
 .video_container {
+	clear:both;
+	margin:auto;
+	float: left;
+	font-size:110%;
+	font-family: 'Poiret One', cursive;
+	width: 40%;
+	padding: 1%;
+	text-align: left;
+}
+
+.petofmonth {
+/*	clear:both;*/
 	margin: auto;
 	float: left;
 	font-size:110%;
@@ -205,17 +235,10 @@ ul.menu li a:focus  {
 	text-align: left;
 }
 
-.petofmonth {
-	margin:auto;
-	float: right;
-	font-size: 110%;
-	font-family: 'Poiret One', cursive;
-	width: 40%;
-	padding :5%;
-	text-align: left;
+.new_pet{
+	clear:both;
 }
-
-
+/*BOTTOM HALF END*/
 
 
 
