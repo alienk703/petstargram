@@ -190,7 +190,6 @@ ul.menu li a:focus  {
    border-radius: 20px;
    text-align: center;
    display: block;
-   margin-right: 500px;
    margin-top: 20px;
 }
 .cats img{
@@ -203,7 +202,6 @@ ul.menu li a:focus  {
    border-radius: 20px;
    text-align: center;
    display: block;
-   margin-right: 500px;
    margin-top: 20px;
 }
 .dogs img{
@@ -216,7 +214,6 @@ ul.menu li a:focus  {
    border-radius: 20px;
    text-align: center;
    display: block;
-   margin-right: 500px;
    margin-top: 20px;
 }
 .other img{
