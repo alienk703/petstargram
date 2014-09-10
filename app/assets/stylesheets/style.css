@@ -12,6 +12,24 @@ body {
 	width: 90px;
 }
 
+.grumpycat{
+	height: 100px;
+	width: 80px;
+}
+
+.biddy img{
+	display: block;
+	float :left;
+	height: 80px;
+	width: 90px;
+}
+
+.biddy{
+	height: 100px;
+	width: 80px;
+}
+
+
 /*.grumpycat{
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
             transform: rotate3d(0, 0, 1, -5deg);
@@ -27,17 +45,10 @@ body {
 
 .tophead{
 	margin-top: -100px;
-	float: center;
-	font-size: 300%;
+	font-size: 250%;
 	text-align: center;
 	font-family: 'Poiret One', strong;
 }
-
-.grumpycat{
-	height: 100px;
-	width: 80px;
-}
-
 
 .site-name {
 	margin:0;
@@ -54,11 +65,15 @@ body {
   clear:both;
   color:#DA1700;
   text-decoration:none;
+
 }
 
+.menu{
+	margin-left:7%;
+}
 
 ul.menu {
-	margin:0;
+	text-align: center;
   	padding:0;
   	list-style:none;
 	font-size: 150%;
@@ -214,30 +229,85 @@ ul.menu li a:focus  {
 
 /*BOTTOM HALF*/
 .video_container {
+	margin-left: 10px;
+	border: solid #99E6FF;
+	border-radius: 10%;
 	clear:both;
-	margin:auto;
+
 	float: left;
 	font-size:110%;
 	font-family: 'Poiret One', cursive;
 	width: 40%;
-	padding: 1%;
+	padding: 1.5%;
 	text-align: left;
 }
 
 .petofmonth {
 /*	clear:both;*/
-	margin: auto;
+	margin-left: 40px;
+	border: solid #99E6FF;
+	border-radius: 5%;
+	margin-top: -0px;
 	float: left;
 	font-size:110%;
 	font-family: 'Poiret One', cursive;
-	width: 40%;
-	padding: 4%;
+	width: 28%;
+	padding:1%;
 	text-align: left;
+
 }
 
-.new_pet{
-	clear:both;
+.petofmonth img{
+	border-radius: 50%;
+	height:350px;
+	width:350px;
 }
+
+/*.doge {
+	clear:both;
+	margin: auto;
+}*/
+
+
+
+.doge img{
+	margin-top: 60px;
+	border: solid #99E6FF;
+	border-radius: 10%;
+	padding:1%;
+	clear: both;
+	margin-right: auto;
+	margin-left: 70px;
+	height: 200px;
+	width: 150px;
+}
+
+
+.donate img{
+	border: solid #99E6FF;
+	border-radius: 10%;
+	float:left;
+	margin-right: auto;
+	margin-left: 70px;
+	display: block;
+	height: 210px;
+	width: 180px;
+}
+
+.footer {
+
+	margin-top: 100px;
+	padding:2%;
+	text-align: center;
+	clear: both;
+	height: 30px;
+}
+
+.footer img{
+	height:30px;
+	width: 25px;
+}
+
 /*BOTTOM HALF END*/
 
 

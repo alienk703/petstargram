@@ -5,7 +5,33 @@
 <html>
 <head>
   <title>Petstargram</title>
+<div class="login_info">
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
 
+	  <!-- LOG OUT -->
+	  <div class="biddy">
+	  <% if user_signed_in? %>
+	  <%= link_to image_tag("http://i.imgur.com/O1j8vAF.png"), destroy_user_session_path, method: :delete %>
+		<% else %>
+	  </div>
+	  <!-- LOG IN -->
+		  <div class="grumpycat">
+		  <div class='animated'>
+		  <%= link_to image_tag("http://i.imgur.com/bkjD8ir.png"), new_user_session_path%>
+		  </div>
+		  </div>
+
+		  <!-- SIGN UP -->
+		  <div class="maru">
+		  <div class='animated'>
+		  <%= link_to image_tag("http://i.imgur.com/kohcfwe.png"), new_user_registration_path%>
+		  </div>
+		  </div>
+
+	  <% end %>
+</div>
 
 
 <body>

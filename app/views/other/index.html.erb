@@ -8,10 +8,10 @@
 
 <div class="tophead">
 <head>
-	<title>PetStargram Cats</title>
+	<title>PetSTARgram Cats</title>
 
 <hgroup>
- <h1 class="site-name"><a href="/">PetStargram</a></h1>
+ <h1 class="site-name"><a href="/">PetSTARgram</a></h1>
  <h3 class="slogan">The Cutest pets on Instagram!</h3>
 </hgroup>
 </head>
@@ -22,13 +22,12 @@
     <li><%= link_to 'Cats', cat_index_path %></li>
     <li><%= link_to 'Dogs', dog_index_path %></li>
     <li><%= link_to 'Other Pets', other_index_path %></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
   </ul>
 </nav>
 
 <div class="other">
-<% @pet.where(:kind => "other").each do |o| %>
+<% @pet.where(:kind => "other").order(followers: :desc).each do |o| %>
 <%= image_tag(o.image_url) %>
 	<div class="otherfollow">
 	<p>Name: <%= o.name %></p>
@@ -36,9 +35,5 @@
 	<% end %>
 	</div>
 </div>
-
-
-
-
 
 
