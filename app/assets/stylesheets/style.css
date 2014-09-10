@@ -1,16 +1,52 @@
 body {
-
 	background-image:url("http://i.imgur.com/cZxYU3M.jpg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     height: 60%;
 }
 
+.grumpycat img{
+	display: block;
+	float :left;
+	height: 80px;
+	width: 90px;
+}
 
-hgroup {
-	font-size: 200%;
+.grumpycat{
+	height: 100px;
+	width: 80px;
+}
+
+.biddy img{
+	display: block;
+	float :left;
+	height: 80px;
+	width: 90px;
+}
+
+.biddy{
+	height: 100px;
+	width: 80px;
+}
+
+
+/*.grumpycat{
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+            transform: rotate3d(0, 0, 1, -5deg);
+}*/
+
+.maru img {
+	margin-top: -10px;
+	display: inline;
+	float :left;
+	height: 80px;
+	width: 90px;
+}
+
+.tophead{
+	margin-top: -100px;
+	font-size: 250%;
 	text-align: center;
-	padding:2%;
 	font-family: 'Poiret One', strong;
 }
 
@@ -23,18 +59,21 @@ hgroup {
 }
 
 
-
 .mainmenu:after{
   content:' ';
   display:table;
   clear:both;
   color:#DA1700;
   text-decoration:none;
+
 }
 
+.menu{
+	margin-left:7%;
+}
 
 ul.menu {
-	margin:0;
+	text-align: center;
   	padding:0;
   	list-style:none;
 	font-size: 150%;
@@ -72,11 +111,34 @@ ul.menu li a:focus  {
   text-decoration:none;
 }
 
+/*TOP HALF*/
+.rankhome {
+	margin-top: 30px;
+	border:solid #9BE6FF;
+	border-radius: 10px;
+}
+
+.rankhome h1{
+	font-family: 'Poiret One', strong;
+	padding:1%;
+}
+
+.rankhome img {
+	float:right;
+	border-radius:50%;
+	display: block;
+	border: 1px solid #9BE6FF;
+	height: 200px;
+	/*margin: auto;*/
+	width: 200px;
+}
+
 .cat_container{
-	font-size: 200%;
-	padding: 5%;
+	margin: auto;
+	font-size: 150%;
+	padding: 2%;
 	float: left;
-	width: 350px;
+	width: 30%;
 	font-family: 'Poiret One', cursive;
 	vertical-align: center;
 	text-align: center;
@@ -87,11 +149,14 @@ ul.menu li a:focus  {
 }
 
 .dog_container{
-	font-size: 200%;
-	padding: 5%;
+	margin: auto;
+	float: left;
+	font-size: 150%;
+	padding: 2%;
 	font-family: 'Poiret One', cursive;
 	vertical-align: center;
 	text-align: center;
+	width: 30%;
 }
 
 .dog_body{
@@ -99,10 +164,11 @@ ul.menu li a:focus  {
 }
 
 .other_container{
-	font-size: 200%;
-	padding:5%;
-	float: right;
-	width: 350px;
+	margin:auto;
+	font-size: 150%;
+	padding:2%;
+	float: left;
+	width: 27%;
 	font-family: 'Poiret One', cursive;
 	vertical-align: center;
 	text-align: center;
@@ -110,24 +176,140 @@ ul.menu li a:focus  {
 .other_body{
 	font-size: 70%;
 }
+/*TOP HALF END*/
 
-img {
-	display: block;
-	border: 1px solid #333;
-	float: center;
-	height: 200px;
-	margin: auto;
+
+/*.animated{
+    position: fixed;
+	height:0px;
 	width: 200px;
-}
+}*/
 
-
+/*INDIVIDUAL PAGE*/
 .cats {
-  text-align: center;
+   border-radius: 20px;
+   text-align: center;
+   display: block;
+   margin-right: 500px;
+   margin-top: 20px;
+}
+.cats img{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
 }
 
 .dogs {
-  text-align: center;
+   border-radius: 20px;
+   text-align: center;
+   display: block;
+   margin-right: 500px;
+   margin-top: 20px;
 }
+.dogs img{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
+
+.other {
+   border-radius: 20px;
+   text-align: center;
+   display: block;
+   margin-right: 500px;
+   margin-top: 20px;
+}
+.other img{
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
+/*INDIVIDUAL PAGE END*/
+
+
+/*BOTTOM HALF*/
+.video_container {
+	margin-left: 10px;
+	border: solid #99E6FF;
+	border-radius: 10%;
+	clear:both;
+
+	float: left;
+	font-size:110%;
+	font-family: 'Poiret One', cursive;
+	width: 40%;
+	padding: 1.5%;
+	text-align: left;
+}
+
+.petofmonth {
+/*	clear:both;*/
+	margin-left: 40px;
+	border: solid #99E6FF;
+	border-radius: 5%;
+	margin-top: -0px;
+	float: left;
+	font-size:110%;
+	font-family: 'Poiret One', cursive;
+	width: 28%;
+	padding:1%;
+	text-align: left;
+
+}
+
+.petofmonth img{
+	border-radius: 50%;
+	height:350px;
+	width:350px;
+}
+
+/*.doge {
+	clear:both;
+	margin: auto;
+}*/
+
+
+
+.doge img{
+	margin-top: 60px;
+	border: solid #99E6FF;
+	border-radius: 10%;
+	padding:1%;
+	clear: both;
+	margin-right: auto;
+	margin-left: 70px;
+	height: 200px;
+	width: 150px;
+}
+
+
+.donate img{
+	border: solid #99E6FF;
+	border-radius: 10%;
+	float:left;
+	margin-right: auto;
+	margin-left: 70px;
+	display: block;
+	height: 210px;
+	width: 180px;
+}
+
+.footer {
+
+	margin-top: 100px;
+	padding:2%;
+	text-align: center;
+	clear: both;
+	height: 30px;
+}
+
+.footer img{
+	height:30px;
+	width: 25px;
+}
+
+/*BOTTOM HALF END*/
+
 
 
 

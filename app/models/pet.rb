@@ -3,6 +3,7 @@ require 'open-uri'
 require 'json'
 
 class Pet < ActiveRecord::Base
+	validates :kind, :name, :followers, presence: true
 
 	def self.images
 		web_contents  = JSON.parse(open('https://api.instagram.com/v1/users/27467826/media/recent/?access_token=137405.467ede5.e1202bb2c76843eea5516617757369c6') {|f| f.read })
