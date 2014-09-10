@@ -5,67 +5,70 @@
 <link rel="stylesheet" type="text/css" href="style">
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<head>
-	<title>PetStargram</title>
 
-<hgroup>
-<!--   <div class="catani">
-  <div class="animated">
-  <img src="http://i.imgur.com/0RqcOXA.png" style="width:95px;height:85px">
-  </div>
-</div>   -->
- <h1 class="site-name"><a href="/">PetStargram</a></h1>
- <h3 class="slogan">The Cutest pets on Instagram!</h3> 
-</hgroup>
-</head>
+<div class="tophead">
+  <head>
+  	<title>PetStargram</title>
+    <hgroup>
+    <!--   <div class="catani">
+      <div class="animated">
+      <img src="http://i.imgur.com/0RqcOXA.png" style="width:95px;height:85px">
+      </div>
+    </div>   -->
+     <h1 class="site-name"><a href="/">PetStargram</a></h1>
+     <h3 class="slogan">The Cutest pets on Instagram!</h3> 
+    </hgroup>
+  </head>
 
-</div>  
-<nav class="mainmenu">
-  <ul class="menu">
-    <li><%= link_to 'Cats', cat_index_path %></li>
-    <li><%= link_to 'Dogs', dog_index_path %></li>
-    <li><%= link_to 'Other Pets', other_index_path %></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+  </div>  
+  <nav class="mainmenu">
+    <ul class="menu">
+      <li><%= link_to 'Cats', cat_index_path %></li>
+      <li><%= link_to 'Dogs', dog_index_path %></li>
+      <li><%= link_to 'Other Pets', other_index_path %></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
 
 
 <body>
 
-  <div class="cat_container">
-    	<img src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'>
-    <h4> No.1 Cat! </h4>
-    <h4><a href="">Nala</a></h4>
-    <h4><%= @followers %></h4>
-    <div class="cat_body">
-      <p>Tardar Sauce, AKA Grumpy Cat might be the most popular cat in the media, but in Instagram Nala is the queen. Beating Tardar Sauce by more than four hundred thousand followers,  Nala is the only cat with over one million followers! Looks like she will be getting comfortable up in the number one spot, while other cats go through furious battle of cuteness.</p>
-    </div> 
- </div>
+<div class="rankhome">
+    <div class="cat_container">
+      	<img src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'>
+      <h4> No.1 Cat! </h4>
+      <h4><a href="">Nala</a></h4>
+      <h4><%= @followers %></h4>
+      <div class="cat_body">
+        <p>Tardar Sauce, AKA Grumpy Cat might be the most popular cat in the media, but in Instagram Nala is the queen. Beating Tardar Sauce by more than four hundred thousand followers,  Nala is the only cat with over one million followers! Looks like she will be getting comfortable up in the number one spot, while other cats go through furious battle of cuteness.</p>
+      </div> 
+   </div>
 
-<div class="other_container">
-    <img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'>
-    <h4>No.1 Other Pet!</h4>
-    <h4><a href="#">Eddy & Rambo</a></h4>
-    <div class="other_body">
-      <p>Cats and Dogs aren't the only pets out there. Check out these group of bunnies Eddy, Rambo and Marbee. Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive(Owner)'s house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!
-    </div> 
+  <div class="other_container">
+      <img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'>
+      <h4>No.1 Other Pet!</h4>
+      <h4><a href="#">Eddy & Rambo</a></h4>
+      <div class="other_body">
+        <p>Cats and Dogs aren't the only pets out there. Check out these group of bunnies Eddy, Rambo and Marbee. Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive(Owner)'s house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!
+      </div> 
+  </div>
+
+
+  <div class="dog_container">
+      <img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'>
+      <h4>No.1 Dog!</h4>
+      <h4><a href="#">Maru</a></h4>
+      <div class="dog_body">
+        <p>The Japanese Shiba Inu Maru has close to million followers! The 7 year old Maru has a birthday coming up in October, and with Tuna closely chasing him from the no.2 spot, lets see if Maru can keep the crown for his birth month</p>
+      </div> 
+  </div>
 </div>
-
-
-<div class="dog_container">
-    <img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'>
-    <h4>No.1 Dog!</h4>
-    <h4><a href="#">Maru</a></h4>
-    <div class="dog_body">
-      <p>The Japanese Shiba Inu Maru has close to million followers! The 7 year old Maru has a birthday coming up in October, and with Tuna closely chasing him from the no.2 spot, lets see if Maru can keep the crown for his birth month</p>
-    </div> 
-</div>
-
 
 <div class="video_container">
   <h1>Video of the month!</h1>
-<iframe width="400" height="300" src="//www.youtube.com/embed/p2H5YVfZVFw" frameborder="0" allowfullscreen></iframe>
+  <iframe width="400" height="300" src="//www.youtube.com/embed/p2H5YVfZVFw" frameborder="0" allowfullscreen></iframe>
     <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
 </div>
 

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="animate.min.css">
+<link href="../../../assets/stylesheets/normalize.css" rel="stylesheet" type="text/css">
+
 <html>
 <head>
   <title>Petstargram</title>
@@ -6,13 +9,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-<% if user_signed_in? %>
-<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+	<% if user_signed_in? %>
+	<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
 <% else %>
 
-
-<%= link_to image_tag("http://i.imgur.com/0RqcOXA.png"), new_user_session_path, :style => "float: left; height: 80px; width: 90px;"%>
-
+<div class="grumpycat">
+	<div class='animated'>
+	<%= link_to image_tag("http://i.imgur.com/bkjD8ir.png"), new_user_session_path%>
+	</div>
+</div>
 <% end %>
 
 
