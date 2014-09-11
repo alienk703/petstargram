@@ -1,5 +1,29 @@
 == README
 
+Welcome to PetSTARgram.
+
+PetSTARgram is a website that displays the most popular cats, dogs, and other pets who are on the instragram. The pets are ranked depending on the followers they have.
+
+You can visit the website at below URL:
+http://radiant-fjord-7105.herokuapp.com/
+
+
+
+how to DL
+
+future plans
+
+
+
+
+
+
+
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
