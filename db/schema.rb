@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20140909203914) do
   end
 
   create_table "pets", force: true do |t|
-    t.integer  "instagram_id"
+    t.string  "instagram"
     t.string   "kind"
     t.string   "name"
     t.integer  "followers"

@@ -24,14 +24,12 @@
   </head>
 
   </div>  
-  <nav class="mainmenu">
-    <ul class="menu">
-      <li><%= link_to 'Cats', cat_index_path %></li>
-      <li><%= link_to 'Dogs', dog_index_path %></li>
-      <li><%= link_to 'Other Pets', other_index_path %></li>
-      <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
-    </ul>
-  </nav>
+  <ul id="nav">
+    <li><%= link_to 'Cats', cat_index_path %></li>
+    <li><%= link_to 'Dogs', dog_index_path %></li>
+    <li><%= link_to 'Other Pets', other_index_path %></li>
+    <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
+  </ul>
 </div>
 
 
@@ -99,7 +97,7 @@
 
   <footer>
     <div class="footer">
-      <ul class="menu">
+    <ul id="nav">
       <li><%= link_to 'Cats', cat_index_path %></li>
       <li><%= link_to 'Dogs', dog_index_path %></li>
       <li><%= link_to 'Other Pets', other_index_path %></li>

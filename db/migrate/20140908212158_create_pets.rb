@@ -1,7 +1,7 @@
 class CreatePets < ActiveRecord::Migration
   def change
     create_table :pets do |t|
-      t.integer :instagram_id
+      t.string :instagram
       t.string :kind
       t.string :name
       t.integer :followers
