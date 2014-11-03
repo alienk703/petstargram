@@ -16,17 +16,10 @@ body {
 
 }
 
-.grumpycat img{
-	margin-top: -100px;
-	display: block;
-	float :left;
-	height: 70px;
-	width: 80px;
-}
-
-.grumpycat{
-	height: 100px;
-	width: 80px;
+.register a{
+	padding: .2em;
+	color: white;
+	text-decoration: none;
 }
 
 .biddy img{
@@ -47,60 +40,50 @@ body {
             transform: rotate3d(0, 0, 1, -5deg);
 }*/
 
-.maru img {
-	margin-top: -120px;
-	display: inline;
-	float :left;
-	height: 70px;
-	width: 80px;
-}
 
 .tophead{
 	background-color: rgba(83, 237, 206, 1);
-	margin-top: -100px;
+	margin-top: -128px;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
-	height: 10.7em;
+	height: 8em;
 }
 
 .site-name {
-
+/*	text-align: left;*/
 	margin: 0 auto;
 	font-size: 350%;
+	float: left;
 }
 
 .site-name a{
-	color: white;
+	color: rgb(44, 62, 80);
 	text-decoration: none;
 }
 
-.slogan {
-	margin: 0;
+.logo {
+	color: white;
+	text-align: left;
+	float: left;
 }
 
 #nav {
 	background-color: rgba(83, 237, 206, 1);
-	width: 750px;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 2em;
 	list-style: none;
 }
 
 #nav li a {
-	border: solid red;
 	color: white;
 	font-size: 130%;
-	float: left;
-	display: block;
-	text-align:center;
-	width: 7em; /* fixed width */
+	float: right;
+	display: inline-block;
+	width: 6em; /* fixed width */
 	text-decoration: none; 
-	height: .5em;
-/*	background:	#C0F2FF;
-	color: #FFFFD6;*/
-/*	border-right: 1px solid #fff;*/
-	padding: 2em 0;
-	transition: all .5s ease;
+	padding: 1em 0;
+/*	transition: all .5s ease;*/
 }
 
 
@@ -318,25 +301,49 @@ h4 a {
 
 
 .donate img{
-	border: solid #99E6FF;
 	border-radius: 10%;
 	float:left;
-	margin-right: auto;
-	margin-left: 70px;
+
+	margin: 70px;
 	display: block;
 	height: 210px;
 	width: 180px;
 }
 
-.footer {
 
-	padding:2%;
-	text-align: center;
-	clear: both;
-	height: 30px;
+/* BOTTOM CONTAINER/FOOTER */
+.botcont {
+	background-color: rgb(44, 62, 80);
+	width: 100%;
+	height: 8em;
+	border: red solid;
 }
 
-.footer img{
+#botnav li {
+	color: white;
+	margin: 0 auto;
+	float: left;
+	list-style: none;
+}
+
+#botnav a {
+	color: white;
+	display:block;
+	text-align:center;
+	width: 10em;
+	text-decoration:none; 
+}
+
+#botnav {
+	color: white;
+	list-style: none;
+}
+
+.credits {
+	margin: 0 auto;
+}
+
+.credits img{
 	height:30px;
 	width: 25px;
 }

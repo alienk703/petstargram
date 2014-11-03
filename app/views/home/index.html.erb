@@ -10,23 +10,16 @@
 <div class="tophead">
   <head>
   	<title>PetStargram</title>
-
-    <hgroup>
-    <!--   <div class="catani">
-      <div class="animated">
-      <img src="http://i.imgur.com/0RqcOXA.png" style="width:95px;height:85px">
-      </div>
-    </div>   -->
-     <h1 class="site-name"><a href="/">PetSTARgram</a></h1>
-     <h3 class="slogan">The Cutest pets on Instagram!</h3> 
-    </hgroup>
   </head>
-
+  <div class="logo">
+    <h1 class="site-name"><a href="/">PetSTARgram</a></h1></br>
+    <h3 class="slogan">The Cutest pets on Instagram!</h3>
+  </div>
   <ul id="nav">
-    <li><%= link_to 'Cats', cat_index_path %></li>
-    <li><%= link_to 'Dogs', dog_index_path %></li>
-    <li><%= link_to 'Other Pets', other_index_path %></li>
     <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
+    <li><%= link_to 'Other Pets', other_index_path %></li>
+    <li><%= link_to 'Dogs', dog_index_path %></li>
+    <li><%= link_to 'Cats', cat_index_path %></li>
   </ul>
 </div>
 
@@ -47,7 +40,7 @@
      </div>
 
     <div class="dog_container">
-        <a href="ttp://instagram.com/marutaro"><img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'></a>
+        <a href="http://instagram.com/marutaro"><img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'></a>
         <h4>No.1 Dog!</h4>
         <h4><a href="http://instagram.com/marutaro">Maru</a></h4>
         <div class="dog_body">
@@ -94,18 +87,20 @@
     </div>
   </div>
 
-  <footer>
-    <div class="footer">
-    <ul id="nav">
-      <li><%= link_to 'Cats', cat_index_path %></li>
-      <li><%= link_to 'Dogs', dog_index_path %></li>
-      <li><%= link_to 'Other Pets', other_index_path %></li>
-      <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
-    </ul>
-    <h4>©Property of The Great Doge<img src="http://i.imgur.com/76YYlGb.png"></h4>
+  <div class="botcont">
+    <footer>
+      <ul id="botnav">
+        <li><%= link_to 'Cats', cat_index_path %></li>
+        <li><%= link_to 'Dogs', dog_index_path %></li>
+        <li><%= link_to 'Other Pets', other_index_path %></li>
+        <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
+      </ul>
+    </footer>   
+
+    <div class="credits">
+       <h4>©Andy Kim Webdev<img src="http://i.imgur.com/76YYlGb.png"></h4> 
     </div>
-  </footer>    
-
-
+  </div>
+    
 </body>
 </html>
