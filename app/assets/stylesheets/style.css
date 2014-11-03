@@ -2,10 +2,8 @@
   box-sizing:border-box;
 }
 
-
 body {
-/*	background-image:url("http://i.imgur.com/cZxYU3M.jpg");
-*/	background-repeat: no-repeat;
+	background-repeat: no-repeat;
   background-attachment: fixed;
   height: 60%;
 }
@@ -13,10 +11,10 @@ body {
 .login_info {
 	height: 6em;
 	width: 10em;
-
 }
 
 .register a{
+	float:left;
 	padding: .2em;
 	color: white;
 	text-decoration: none;
@@ -25,13 +23,6 @@ body {
 .biddy img{
 	display: block;
 	float :left;
-	height: 70px;
-	width: 80px;
-}
-
-.biddy{
-	height: 100px;
-	width: 80px;
 }
 
 
@@ -39,7 +30,6 @@ body {
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
             transform: rotate3d(0, 0, 1, -5deg);
 }*/
-
 
 .tophead{
 	background-color: rgba(83, 237, 206, 1);
@@ -50,7 +40,6 @@ body {
 }
 
 .site-name {
-/*	text-align: left;*/
 	margin: 0 auto;
 	font-size: 350%;
 	float: left;
@@ -86,7 +75,6 @@ body {
 /*	transition: all .5s ease;*/
 }
 
-
 ul.menu li a:hover,
 ul.menu li a:focus  {
 	background-color: rgba(83, 237, 206, 1);
@@ -96,7 +84,6 @@ ul.menu li a:focus  {
 }
 
 /*TOP HALF*/
-
 h4 a {
 	text-decoration: none;
 	color: white;
@@ -123,7 +110,6 @@ h4 a {
 	margin: auto;
 	width: 190px;
 }
-
 
 .cat_container:hover img, 
 .dog_container:hover img,
@@ -202,8 +188,10 @@ h4 a {
    border-radius: 20px;
    text-align: center;
    display: block;
-   margin-top: 140px;
+   margin-top: 60px;
+   padding: 20px;
 }
+
 .cats img{
 	border-radius: 50%;
 	height: 300px;
@@ -214,20 +202,27 @@ h4 a {
    border-radius: 20px;
    text-align: center;
    display: block;
-   margin-top: 140px;
+   margin-top: 60px;
+   width: 100%;
 }
+
 .dogs img{
 	border-radius: 50%;
 	height: 300px;
 	width: 300px;
 }
 
+.dogfollow {
+/*	padding-bottom: 4em;*/
+}
+
 .other {
    border-radius: 20px;
    text-align: center;
    display: block;
-   margin-top: 140px;
+   margin-top: 60px;
 }
+
 .other img{
 	border-radius: 50%;
 	height: 300px;
@@ -240,9 +235,7 @@ h4 a {
 
 .bottom {
 	color: white;
-	border: solid red;
 	background-color: rgba(24, 188, 156, 1);
-	border: solid red;
 	height: 43em;
 }
 
@@ -260,10 +253,7 @@ h4 a {
 }
 
 .petofmonth {
-/*	clear:both;*/
 	margin-left: 40px;
-/*	border: solid #99E6FF;
-	border-radius: 5%;*/
 	margin-top: -0px;
 	float: left;
 	font-size:110%;
@@ -271,21 +261,18 @@ h4 a {
 	width: 28%;
 	padding:1%;
 	text-align: left;
-
 }
 
 .petofmonth img{
 	border-radius: 50%;
-	height:250px;
-	width:250px;
+	height:220px;
+	width:220px;
 }
 
 /*.doge {
 	clear:both;
 	margin: auto;
 }*/
-
-
 
 .doge img{
 	margin-top: 60px;
@@ -299,48 +286,43 @@ h4 a {
 	width: 150px;
 }
 
-
 .donate img{
 	border-radius: 10%;
 	float:left;
-
-	margin: 70px;
 	display: block;
 	height: 210px;
 	width: 180px;
 }
 
-
 /* BOTTOM CONTAINER/FOOTER */
 .botcont {
 	background-color: rgb(44, 62, 80);
 	width: 100%;
-	height: 8em;
-	border: red solid;
+	height: 5em;
+	border: solid rgb(44, 62, 80);;
 }
 
 #botnav li {
-	color: white;
-	margin: 0 auto;
-	float: left;
-	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	display: inline;
+  padding: 3px 50px;
 }
 
-#botnav a {
+#botnav li a{
 	color: white;
-	display:block;
-	text-align:center;
-	width: 10em;
-	text-decoration:none; 
+	text-decoration: none;
 }
 
 #botnav {
+
 	color: white;
-	list-style: none;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
 }
 
-.credits {
-	margin: 0 auto;
+.credits h4{
+	text-align: center;
 }
 
 .credits img{

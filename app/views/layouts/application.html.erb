@@ -3,27 +3,11 @@
 <html>
 <head>
   <title>Petstargram</title>
-<div class="login_info">
-	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	  <%= csrf_meta_tags %>
-
-	  <!-- LOG OUT -->
-	  <div class="biddy">
-	  <% if user_signed_in? %>
-	  <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
-		<% else %>
-	  </div>
-	  <!-- LOG IN -->
-	  <div class="register">
-		  <%= link_to "Log In", new_user_session_path%>
-			<!-- SIGN UP -->
-		  <%= link_to "Sign Up", new_user_registration_path%>
-	  </div>
-
-	  <% end %>
-</div>
-
+    <div class="login_info">
+    	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    	  <%= csrf_meta_tags %>
+    </div>
 
 <body>
 

@@ -7,6 +7,7 @@
 
 
 
+
 <div class="tophead">
   <head>
   	<title>PetStargram</title>
@@ -21,10 +22,28 @@
     <li><%= link_to 'Dogs', dog_index_path %></li>
     <li><%= link_to 'Cats', cat_index_path %></li>
   </ul>
+
+  <div class="biddy">
+    <% if user_signed_in? %>
+    <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+    <% else %>
+  </div>
+      <!-- LOG IN -->
+  <div class="register">
+    <%= link_to "Log In", new_user_session_path%>
+    <!-- SIGN UP -->
+    <%= link_to "Sign Up", new_user_registration_path%>
+    <%end%>
+  </div>
 </div>
 
 
+
 <body>
+
+
+
+
 
   <div class="rankhome">
     <h1>November Rankings!</h1>
@@ -62,7 +81,7 @@
   <div class="bottom">
     <div class="video_container">
       <h1>Video of the month!</h1>
-      <iframe width="400" height="300" src="//www.youtube.com/embed/ZlOsu870j8E" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="200" src="//www.youtube.com/embed/ZlOsu870j8E" frameborder="0" allowfullscreen></iframe>
         <p>Cat videos are always great! I could literally spend a whole day watching videos after videos! Are you having a grumpy day? Checkout this cat video, I can assure you that it will put a smile on your face and help brighten up your day!</p>
     </div>
 
@@ -96,10 +115,10 @@
         <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
       </ul>
     </footer>   
+  </div>
 
-    <div class="credits">
-       <h4>©Andy Kim Webdev<img src="http://i.imgur.com/76YYlGb.png"></h4> 
-    </div>
+  <div class="credits">
+    <h4>©Andy Kim Webdev<img src="http://i.imgur.com/76YYlGb.png"></h4> 
   </div>
     
 </body>

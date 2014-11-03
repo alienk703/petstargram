@@ -5,37 +5,45 @@
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
-<div class="tophead">
-<head>
-	<title>PetSTARgram Cats</title>
 
-<hgroup>
- <h1 class="site-name"><a href="/">PetSTARgram</a></h1>
- <h3 class="slogan">The Cutest pets on Instagram!</h3>
-</hgroup>
-</head>
+<div class="tophead">
+  <head>
+    <title>PetStargram Other</title>
+  </head>
+  <div class="logo">
+    <h1 class="site-name"><a href="/">PetSTARgram</a></h1></br>
+    <h3 class="slogan">The Cutest pets on Instagram!</h3>
+  </div>
+  <ul id="nav">
+    <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
+    <li><%= link_to 'Other Pets', other_index_path %></li>
+    <li><%= link_to 'Dogs', dog_index_path %></li>
+    <li><%= link_to 'Cats', cat_index_path %></li>
+  </ul>
 </div>
 
-  <ul id="nav">
-    <li><%= link_to 'Cats', cat_index_path %></li>
-    <li><%= link_to 'Dogs', dog_index_path %></li>
-    <li><%= link_to 'Other Pets', other_index_path %></li>
-    <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
-  </ul>
-
 <div class="other">
-<% @pet.where(:kind => "other").order(followers: :desc).each do |o| %>
-<%= image_tag(o.image_url) %>
+  <% @pet.where(:kind => "other").order(followers: :desc).each do |o| %>
+  <%= image_tag(o.image_url) %>
 	<div class="otherfollow">
-	<p>Name: <%= o.name %></p>
-	<p>Followers: <%= o.followers %></p>
-	<% end %>
+  	<p>Name: <%= o.name %></p>
+  	<p>Followers: <%= o.followers %></p>
+  <% end %>
 	</div>
 </div>
 
 
-<footer>
-  <div class="footer">
-    <h4>©Property of The Great Doge<img src="http://i.imgur.com/76YYlGb.png"></h4>
-  </div>
-</footer>   
+<div class="botcont">
+  <footer>
+    <ul id="botnav">
+      <li><%= link_to 'Cats', cat_index_path %></li>
+      <li><%= link_to 'Dogs', dog_index_path %></li>
+      <li><%= link_to 'Other Pets', other_index_path %></li>
+      <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
+    </ul>
+  </footer>   
+</div>
+
+<div class="credits">
+  <h4>©Andy Kim Webdev<img src="http://i.imgur.com/76YYlGb.png"></h4> 
+</div> 
