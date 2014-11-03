@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="animate.min.css">
-<link href="../../../assets/stylesheets/normalize.css" rel="stylesheet" type="text/css">
+
 <link rel="stylesheet" type="text/css" href="style">
-<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
 
@@ -23,7 +22,6 @@
     </hgroup>
   </head>
 
-  </div>  
   <ul id="nav">
     <li><%= link_to 'Cats', cat_index_path %></li>
     <li><%= link_to 'Dogs', dog_index_path %></li>
@@ -36,21 +34,22 @@
 <body>
 
   <div class="rankhome">
-    <h1>September Rankings!</h1>
+    <h1>November Rankings!</h1>
       <div class="cat_container">
-        	<img src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'>
+        	<a href="http://instagram.com/nala_cat"><img class="cat1" src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'></a>
         <h4> No.1 Cat! </h4>
-        <h4><a href="">Nala</a></h4>
+        <h4><a href="http://instagram.com/nala_cat">Nala</a></h4>
         <h4><%= @followers %></h4>
+
         <div class="cat_body">
           <p>Tardar Sauce, AKA Grumpy Cat might be the most popular cat in the media, but in Instagram Nala is the queen. Beating Tardar Sauce by more than four hundred thousand followers,  Nala is the only cat with over one million followers! Looks like she will be getting comfortable up in the number one spot, while other cats go through furious battle of cuteness.</p>
         </div> 
      </div>
 
     <div class="dog_container">
-        <img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'>
+        <a href="ttp://instagram.com/marutaro"><img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'></a>
         <h4>No.1 Dog!</h4>
-        <h4><a href="#">Maru</a></h4>
+        <h4><a href="http://instagram.com/marutaro">Maru</a></h4>
         <div class="dog_body">
           <p>The Japanese Shiba Inu Maru has close to million followers! The 7 year old Maru has a birthday coming up in October, and with Tuna closely chasing him from the no.2 spot, lets see if Maru can keep the crown for his birth month</p>
         </div> 
@@ -58,42 +57,42 @@
 
 
     <div class="other_container">
-        <img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'>
+        <a href="http://instagram.com/bunnymama"><img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'></a>
         <h4>No.1 Other Pet!</h4>
-        <h4><a href="#">Eddy & Rambo</a></h4>
+        <h4><a href="http://instagram.com/bunnymama">Eddy & Rambo</a></h4>
         <div class="other_body">
           <p>Cats and Dogs aren't the only pets out there. Check out these group of bunnies Eddy, Rambo and Marbee. Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive(Owner)'s house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!
         </div> 
     </div>
   </div>
 
-
-  <div class="video_container">
-    <h1>Video of the month!</h1>
-    <iframe width="400" height="300" src="//www.youtube.com/embed/p2H5YVfZVFw" frameborder="0" allowfullscreen></iframe>
-      <p>Cat videos are always great! I could literally spend a whole day watching videos after videos! Are you having a grumpy day? Checkout this cat video, I can assure you that it will put a smile on your face and help brighten up your day!</p>
-  </div>
-
-  <div class="petofmonth">
-    <h1>Pet of the Month!</h1>
-    <img src='http://i.imgur.com/leg4FTf.png'>
-    <h4>Rusty the Red Panda</h4>
-    <p>Sophia the mother red panda gave birth to twin boys Rusty and Wayne back in 2013 in Lincoln Children Zoo in Nebraska. After few month, Rusty came to join the National Zoo in Washington DC, and he is now part of the DC family. You can go see Rusty and his other frineds at the National Zoo for free any time!
-    </p>
-  </div>
-
-  <div class="rightbar">
-    <div class="doge">
-      <% if user_signed_in? %>
-      <%= link_to image_tag("http://i.imgur.com/HH5v6mI.png"), new_pet_path %>
-      <% end %>
+  <div class="bottom">
+    <div class="video_container">
+      <h1>Video of the month!</h1>
+      <iframe width="400" height="300" src="//www.youtube.com/embed/ZlOsu870j8E" frameborder="0" allowfullscreen></iframe>
+        <p>Cat videos are always great! I could literally spend a whole day watching videos after videos! Are you having a grumpy day? Checkout this cat video, I can assure you that it will put a smile on your face and help brighten up your day!</p>
     </div>
 
-    <div class="donate">
-     <a href="http://www.aspca.org/"><img src="http://i.imgur.com/uFtviDP.png"></a>
+    <div class="petofmonth">
+      <h1>Pet of the Month!</h1>
+      <a href="http://instagram.com/matsumotoooooo"><img src='http://photos-b.ak.instagram.com/hphotos-ak-xaf1/10729395_728954810518033_1244049489_n.jpg'></a>
+      <h4>Kinagomu</h4>
+      <p>All the way from Japan, Kinagomu's round face is just too adorable! Checkout her instagram page and when you do, make sure to watch the video where drink water off the fountain.
+      </p>
+    </div>
+
+    <div class="rightbar">
+      <div class="doge">
+        <% if user_signed_in? %>
+        <%= link_to image_tag("http://i.imgur.com/HH5v6mI.png"), new_pet_path %>
+        <% end %>
+      </div>
+
+      <div class="donate">
+       <a href="http://www.aspca.org/"><img src="http://i.imgur.com/uFtviDP.png"></a>
+      </div>
     </div>
   </div>
-
 
   <footer>
     <div class="footer">

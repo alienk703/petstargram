@@ -4,8 +4,8 @@
 
 
 body {
-	background-image:url("http://i.imgur.com/cZxYU3M.jpg");
-	background-repeat: no-repeat;
+/*	background-image:url("http://i.imgur.com/cZxYU3M.jpg");
+*/	background-repeat: no-repeat;
   background-attachment: fixed;
   height: 60%;
 }
@@ -20,8 +20,8 @@ body {
 	margin-top: -100px;
 	display: block;
 	float :left;
-	height: 80px;
-	width: 90px;
+	height: 70px;
+	width: 80px;
 }
 
 .grumpycat{
@@ -48,7 +48,7 @@ body {
 }*/
 
 .maru img {
-	margin-top: -110px;
+	margin-top: -120px;
 	display: inline;
 	float :left;
 	height: 70px;
@@ -56,38 +56,49 @@ body {
 }
 
 .tophead{
+	background-color: rgba(83, 237, 206, 1);
 	margin-top: -100px;
-	font-size: 250%;
 	text-align: center;
-	font-family: 'Poiret One', strong;
+	font-family: 'Montserrat', sans-serif;
+	height: 10.7em;
 }
 
 .site-name {
-	margin:0;
+
+	margin: 0 auto;
+	font-size: 350%;
+}
+
+.site-name a{
+	color: white;
+	text-decoration: none;
 }
 
 .slogan {
 	margin: 0;
 }
 
-
-
 #nav {
-	width:750px;
-	margin:0 auto;
-	margin-top: 1em;
-	list-style:none;
+	background-color: rgba(83, 237, 206, 1);
+	width: 750px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	list-style: none;
 }
-#nav li {
-	float:left;
-	display:block;
+
+#nav li a {
+	border: solid red;
+	color: white;
+	font-size: 130%;
+	float: left;
+	display: block;
 	text-align:center;
-	width:150px; /* fixed width */
-	text-decoration:none; 
-	height: 1em;
-	background:	#C0F2FF;
-	color: #FFFFD6;
-	border-right: 1px solid #fff;
+	width: 7em; /* fixed width */
+	text-decoration: none; 
+	height: .5em;
+/*	background:	#C0F2FF;
+	color: #FFFFD6;*/
+/*	border-right: 1px solid #fff;*/
 	padding: 2em 0;
 	transition: all .5s ease;
 }
@@ -95,41 +106,69 @@ body {
 
 ul.menu li a:hover,
 ul.menu li a:focus  {
-  background:#C0F2FF;
-  color:#FFFFD6;
+	background-color: rgba(83, 237, 206, 1);
+  color: blue;
   transition: all .1s ease;
   text-decoration:none;
 }
 
 /*TOP HALF*/
+
+h4 a {
+	text-decoration: none;
+	color: white;
+	font-size: 80%;
+}
+
 .rankhome {
-	margin-top: 90px;
-	border:solid #9BE6FF;
-	border-radius: 10px;
+	border: solid rgba(44, 62, 80, 1) ;
+	color: white;
+	background-color: rgba(44, 62, 80, 1);
+	height: 35em;
 }
 
 .rankhome h1{
-	font-family: 'Poiret One', strong;
+	font-family: 'Montserrat', sans-serif;
 	padding:1%;
 }
 
 .rankhome img {
 	float:right;
-	border-radius:50%;
+	border-radius: 50%;
 	display: block;
-	border: 1px solid #9BE6FF;
-	height: 200px;
-	/*margin: auto;*/
-	width: 200px;
+	height: 190px;
+	margin: auto;
+	width: 190px;
 }
 
-.cat_container{
+
+.cat_container:hover img, 
+.dog_container:hover img,
+.other_container:hover img {
+    -webkit-transform:scale(1.03); /* Safari and Chrome */
+    -moz-transform:scale(1.03); /* Firefox */
+    -ms-transform:scale(1.03); /* IE 9 */
+    -o-transform:scale(1.03); /* Opera */
+     transform:scale(1.03);
+}
+
+.cat_container:hover img, 
+.dog_container:hover img,
+.other_container:hover img {
+    -webkit-transition: all 0.08s ease; /* Safari and Chrome */
+    -moz-transition: all 0.08s ease; /* Firefox */
+    -ms-transition: all 0.08s ease; /* IE 9 */
+    -o-transition: all 0.08s ease; /* Opera */
+    transition: all 0.08s ease;
+}
+
+.cat_container {
 	margin: auto;
 	font-size: 150%;
-	padding: 2%;
+	padding: 1%;
 	float: left;
-	width: 30%;
-	font-family: 'Poiret One', cursive;
+	width: 33%;
+	font-family: 'Montserrat', sans-serif;
 	vertical-align: center;
 	text-align: center;
 }
@@ -139,14 +178,14 @@ ul.menu li a:focus  {
 }
 
 .dog_container{
-	margin: auto;
-	float: left;
+	margin: 0 auto;
+  float: left;
 	font-size: 150%;
-	padding: 2%;
-	font-family: 'Poiret One', cursive;
+	padding: 1%;
+	font-family: 'Montserrat', sans-serif;
 	vertical-align: center;
 	text-align: center;
-	width: 30%;
+	width: 33%;
 }
 
 .dog_body{
@@ -154,12 +193,12 @@ ul.menu li a:focus  {
 }
 
 .other_container{
-	margin:auto;
+	margin: auto;
 	font-size: 150%;
-	padding:2%;
+	padding: 1%;
 	float: left;
-	width: 27%;
-	font-family: 'Poiret One', cursive;
+	width: 33%;
+	font-family: 'Montserrat', sans-serif;
 	vertical-align: center;
 	text-align: center;
 }
@@ -215,15 +254,23 @@ ul.menu li a:focus  {
 
 
 /*BOTTOM HALF*/
+
+.bottom {
+	color: white;
+	border: solid red;
+	background-color: rgba(24, 188, 156, 1);
+	border: solid red;
+	height: 43em;
+}
+
 .video_container {
 	margin-left: 10px;
-	border: solid #99E6FF;
-	border-radius: 10%;
+/*	border: solid #99E6FF;
+	border-radius: 10%;*/
 	clear:both;
-
 	float: left;
 	font-size:110%;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Montserrat', sans-serif;
 	width: 40%;
 	padding: 1.5%;
 	text-align: left;
@@ -232,12 +279,12 @@ ul.menu li a:focus  {
 .petofmonth {
 /*	clear:both;*/
 	margin-left: 40px;
-	border: solid #99E6FF;
-	border-radius: 5%;
+/*	border: solid #99E6FF;
+	border-radius: 5%;*/
 	margin-top: -0px;
 	float: left;
 	font-size:110%;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Montserrat', sans-serif;
 	width: 28%;
 	padding:1%;
 	text-align: left;
