@@ -22,29 +22,23 @@
     <li><%= link_to 'Dogs', dog_index_path %></li>
     <li><%= link_to 'Cats', cat_index_path %></li>
   </ul>
+</div>
 
-  <div class="biddy">
+  <div class="register">
     <% if user_signed_in? %>
     <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
     <% else %>
-  </div>
-      <!-- LOG IN -->
-  <div class="register">
+    <!-- LOG IN -->
     <%= link_to "Log In", new_user_session_path%>
     <!-- SIGN UP -->
     <%= link_to "Sign Up", new_user_registration_path%>
     <%end%>
   </div>
-</div>
+
 
 
 
 <body>
-
-
-
-
-
   <div class="rankhome">
     <h1>November Rankings!</h1>
       <div class="cat_container">
@@ -101,7 +95,10 @@
       </div>
 
       <div class="donate">
-       <a href="http://www.aspca.org/"><img src="http://i.imgur.com/uFtviDP.png"></a>
+        <h1>Help the Animals</h4>
+       <a href="http://www.aspca.org/"><img src="http://images5.fanpop.com/image/photos/29200000/ASPCA-aspca-29215695-320-240.jpg"></a>
+       <h4>Help the animals</h4>
+       <p>There are still alot of animals who needs a home and are in need of warm heart to take care of them. Help ASPCA take care of the animals by donating small amount to help spray/neuter and receive vaccination.</p>
       </div>
     </div>
   </div>

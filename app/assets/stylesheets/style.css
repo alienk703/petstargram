@@ -13,9 +13,14 @@ body {
 	width: 10em;
 }
 
+.register {
+	margin-top: -2em;
+	float: right;
+	text-decoration: none;
+}
+
 .register a{
-	float:left;
-	padding: .2em;
+	padding: .6em;
 	color: white;
 	text-decoration: none;
 }
@@ -24,7 +29,6 @@ body {
 	display: block;
 	float :left;
 }
-
 
 /*.grumpycat{
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
@@ -189,7 +193,6 @@ h4 a {
    text-align: center;
    display: block;
    margin-top: 60px;
-   padding: 20px;
 }
 
 .cats img{
@@ -247,7 +250,7 @@ h4 a {
 	float: left;
 	font-size:110%;
 	font-family: 'Montserrat', sans-serif;
-	width: 40%;
+	width: 35%;
 	padding: 1.5%;
 	text-align: left;
 }
@@ -286,12 +289,22 @@ h4 a {
 	width: 150px;
 }
 
+.donate {
+	margin-left: 40px;
+	margin-top: -0px;
+	float: left;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	width: 28%;
+	padding:1%;
+	text-align: left;
+}
+
+
 .donate img{
 	border-radius: 10%;
-	float:left;
-	display: block;
-	height: 210px;
-	width: 180px;
+	width: 50%;
+
 }
 
 /* BOTTOM CONTAINER/FOOTER */
@@ -331,6 +344,7 @@ h4 a {
 }
 
 /*BOTTOM HALF END*/
+
 
 
 
