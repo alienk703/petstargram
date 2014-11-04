@@ -1,122 +1,431 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<link rel="stylesheet" type="text/css" href="style">
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>PetStargram</title>
 
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<div class="tophead">
-  <head>
-  	<title>PetStargram</title>
-  </head>
-  <div class="logo">
-    <h1 class="site-name"><a href="/">PetSTARgram</a></h1></br>
-    <h3 class="slogan">The Cutest pets on Instagram!</h3>
-  </div>
-  <ul id="nav">
-    <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
-    <li><%= link_to 'Other Pets', other_index_path %></li>
-    <li><%= link_to 'Dogs', dog_index_path %></li>
-    <li><%= link_to 'Cats', cat_index_path %></li>
-  </ul>
-</div>
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
-  <div class="register">
-    <% if user_signed_in? %>
-    <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
-    <% else %>
-    <!-- LOG IN -->
-    <%= link_to "Log In", new_user_session_path%>
-    <!-- SIGN UP -->
-    <%= link_to "Sign Up", new_user_registration_path%>
-    <%end%>
-  </div>
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
+</head>
 
+<body id="page-top" class="index">
 
-<body>
-  <div class="rankhome">
-    <h1>November Rankings!</h1>
-      <div class="cat_container">
-        	<a href="http://instagram.com/nala_cat"><img class="cat1" src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'></a>
-        <h4> No.1 Cat! </h4>
-        <h4><a href="http://instagram.com/nala_cat">Nala</a></h4>
-        <h4><%= @followers %></h4>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">PetStargram</a>
+            </div>
 
-        <div class="cat_body">
-          <p>Tardar Sauce, AKA Grumpy Cat might be the most popular cat in the media, but in Instagram Nala is the queen. Beating Tardar Sauce by more than four hundred thousand followers,  Nala is the only cat with over one million followers! Looks like she will be getting comfortable up in the number one spot, while other cats go through furious battle of cuteness.</p>
-        </div> 
-     </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <%= link_to 'Cats', cat_index_path %>
+                    </li>
+                    <li class="page-scroll">
+                       <%= link_to 'Dogs', dog_index_path %>
+                    </li>
+                    <li class="page-scroll">
+                        <%= link_to 'Other Pets', other_index_path %>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="mailto:petstargram@gmail.com">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-    <div class="dog_container">
-        <a href="http://instagram.com/marutaro"><img src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'></a>
-        <h4>No.1 Dog!</h4>
-        <h4><a href="http://instagram.com/marutaro">Maru</a></h4>
-        <div class="dog_body">
-          <p>The Japanese Shiba Inu Maru has close to million followers! The 7 year old Maru has a birthday coming up in October, and with Tuna closely chasing him from the no.2 spot, lets see if Maru can keep the crown for his birth month</p>
-        </div> 
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="http://instagram.com/nala_cat"><img class="img-responsive" src='http://photos-c.ak.instagram.com/hphotos-ak-xaf1/10632081_749681735098754_1009063030_n.jpg'></a>
+                    <div class="intro-text">
+                        <span class="name">No.1 Cat!</span>
+                        <span class="pet"><a href="http://instagram.com/nala_cat">Nala</a></span></br>
+                        <span class="skills">Tardar Sauce, AKA Grumpy Cat might be the most popular cat in the media, but in Instagram Nala is the queen. Nala is the only cat with over one million followers so make sure to checkout her cuteness.</span>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                      <a href="http://instagram.com/marutaro"><img class="img-responsive" src='http://photos-h.ak.instagram.com/hphotos-ak-xaf1/10655146_741897905870511_1622033811_n.jpg'></a>
+                    <div class="intro-text">
+                        <span class="name">No.1 Dog</span>
+                       <span class="pet"><a href="http://instagram.com/marutaro">Maru</a></span></br>
+                        <span class="skills">The Japanese Shiba Inu Maru has close to million followers! Maru just became 7 in October so no.1 spot is a perfect gift for Maru</span>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                     <a href="http://instagram.com/bunnymama"><img class="img-responsive" src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'></a>
+                    <div class="intro-text">
+                        <span class="name">No.1 Other</span>
+                         <span class="pet"><a href="http://instagram.com/bunnymama">Eddy & Rambo</a></span></br>
+                        <span class="skills">Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive's house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="misc">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="intro-text">
+                        <span class="name">Video of the Month</span>
+                        <iframe width="300" height="200" src="//www.youtube.com/embed/ZlOsu870j8E" frameborder="0" allowfullscreen></iframe></br>
+                        <span class="skills">Cat videos are always great! I could literally spend a whole day watching videos after videos! Are you having a grumpy day? Checkout this cat video, I can assure you that it will put a smile on your face and help brighten up your day!</span>
+                    </div>
+                </div>
+
+                 <div class="col-xs-6">
+                     <div class="intro-text">
+                        <span class="name">Pet of the Month</span>
+                         <a href="http://instagram.com/matsumotoooooo"><img class="img-responsive" src='http://photos-b.ak.instagram.com/hphotos-ak-xaf1/10729395_728954810518033_1244049489_n.jpg'></a>   
+                       <span class="pom"><a href="http://instagram.com/marutaro">Kinagomu</a></span></br>
+                        <span class="skills">The Japanese Shiba Inu Maru has close to million followers! Maru just became 7 in October so no.1 spot is a perfect gift for Maru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
 
-
-    <div class="other_container">
-        <a href="http://instagram.com/bunnymama"><img src='http://photos-h.ak.instagram.com/hphotos-ak-xfa1/10654898_721842437870751_2123901791_n.jpg'></a>
-        <h4>No.1 Other Pet!</h4>
-        <h4><a href="http://instagram.com/bunnymama">Eddy & Rambo</a></h4>
-        <div class="other_body">
-          <p>Cats and Dogs aren't the only pets out there. Check out these group of bunnies Eddy, Rambo and Marbee. Eddy, Rambo and Marbee are three cage-free house bunnies that roam around Olive(Owner)'s house armed in cuteness. With army of hedgehogs chasing after them, lets see how long these bunnies could hold the No.1 Spot!
-        </div> 
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="bottom">
-    <div class="video_container">
-      <h1>Video of the month!</h1>
-      <iframe width="300" height="200" src="//www.youtube.com/embed/ZlOsu870j8E" frameborder="0" allowfullscreen></iframe>
-        <p>Cat videos are always great! I could literally spend a whole day watching videos after videos! Are you having a grumpy day? Checkout this cat video, I can assure you that it will put a smile on your face and help brighten up your day!</p>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="petofmonth">
-      <h1>Pet of the Month!</h1>
-      <a href="http://instagram.com/matsumotoooooo"><img src='http://photos-b.ak.instagram.com/hphotos-ak-xaf1/10729395_728954810518033_1244049489_n.jpg'></a>
-      <h4>Kinagomu</h4>
-      <p>All the way from Japan, Kinagomu's round face is just too adorable! Checkout her instagram page and when you do, make sure to watch the video where drink water off the fountain.
-      </p>
-    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-    <div class="rightbar">
-      <div class="doge">
-        <% if user_signed_in? %>
-        <%= link_to image_tag("http://i.imgur.com/HH5v6mI.png"), new_pet_path %>
-        <% end %>
-      </div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-      <div class="donate">
-        <h1>Help the Animals</h4>
-       <a href="http://www.aspca.org/"><img src="http://images5.fanpop.com/image/photos/29200000/ASPCA-aspca-29215695-320-240.jpg"></a>
-       <h4>Help the animals</h4>
-       <p>There are still alot of animals who needs a home and are in need of warm heart to take care of them. Help ASPCA take care of the animals by donating small amount to help spray/neuter and receive vaccination.</p>
-      </div>
-    </div>
-  </div>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 
-  <div class="botcont">
-    <footer>
-      <ul id="botnav">
-        <li><%= link_to 'Cats', cat_index_path %></li>
-        <li><%= link_to 'Dogs', dog_index_path %></li>
-        <li><%= link_to 'Other Pets', other_index_path %></li>
-        <li><a href="mailto:petstargram@gmail.com">Contact</a></li>
-      </ul>
-    </footer>   
-  </div>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-  <div class="credits">
-    <h4>©Andy Kim Webdev<img src="http://i.imgur.com/76YYlGb.png"></h4> 
-  </div>
-    
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
 </body>
+
 </html>

@@ -95,6 +95,7 @@ h4 a {
 }
 
 .rankhome {
+  max-width: 100%;
 	border: solid rgba(44, 62, 80, 1) ;
 	color: white;
 	background-color: rgba(44, 62, 80, 1);
@@ -110,9 +111,11 @@ h4 a {
 	float:right;
 	border-radius: 50%;
 	display: block;
-	height: 190px;
-	margin: auto;
-	width: 190px;
+  margin: auto;
+	max-height: 190px;
+	max-width: 190px;
+  height: auto;
+  width: auto;
 }
 
 .cat_container:hover img, 
@@ -169,7 +172,7 @@ h4 a {
 	margin: auto;
 	font-size: 150%;
 	padding: 1%;
-	float: left;
+	float: right;
 	width: 33%;
 	font-family: 'Montserrat', sans-serif;
 	vertical-align: center;
@@ -181,12 +184,6 @@ h4 a {
 /*TOP HALF END*/
 
 
-/*.animated{
-    position: fixed;
-	height:0px;
-	width: 200px;
-}*/
-
 /*INDIVIDUAL PAGE*/
 .cats {
    border-radius: 20px;
@@ -196,9 +193,11 @@ h4 a {
 }
 
 .cats img{
+  max-width: 300px;
+  max-height: 300px;
 	border-radius: 50%;
-	height: 300px;
-	width: 300px;
+	height: auto;
+	width: auto;
 }
 
 .dogs {
