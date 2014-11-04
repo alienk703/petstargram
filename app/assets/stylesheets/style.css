@@ -2,6 +2,14 @@
   box-sizing:border-box;
 }
 
+.newpet {
+  background-color: rgb(24, 188, 156);
+  text-align: center;
+  border-radius: 1em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 /*INDIVIDUAL PAGE*/
 .cats {
    border-radius: 20px;
@@ -54,5 +62,12 @@
 
 .otherfollow {
   padding-top: 2em;
+}
+
+.ownpet {
+  border-radius: 50%;
+  height: 60%;
+  width: 60%;
+
 }
 

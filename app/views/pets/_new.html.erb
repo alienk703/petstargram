@@ -1,28 +1,29 @@
-<%= form_for(@pet) do |f| %>
+<div class="newpet">  
+  <%= form_for(@pet) do |f| %>
 
 
-  <div class="field">
-    <%= f.label :kind %><br>
-    <%= f.text_field :kind %>
-  </div>
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :followers %><br>
-    <%= f.text_field :followers %>
-  </div>
-  <div class="field">
-    <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
-  </div>
-  <div class="field">
-    <%= f.label :instagram_id %><br>
-    <%= f.text_field :instagram_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
+    <div class="field">
+      <%= f.label :kind %><br>
+      <%= f.text_field :kind %>
+    </div>
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :followers %><br>
+      <%= f.text_field :followers %>
+    </div>
+    <div class="field">
+      <%= f.label :image_url %><br>
+      <%= f.text_field :image_url %>
+    </div>
+    <div class="field">
+      <%= f.label :instagram %><br>
+      <%= f.text_field :instagram  %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

@@ -1,14 +1,51 @@
-<h1>Pet List</h1>
-	<ul>
-		<li><%= image_tag( @pet.name ) do %></li>
-		<% end %>
-		<li><%= @pet.name %></li>
-		<li><%= @pet.followers %></li>		
-	</ul>
+<div class="newpet">  
+  <h1>Pet List</h1>
+  	<ul>
+  		<li><%= image_tag( @pet.name ) do %></li>
+  		<% end %>
+  		<li><%= @pet.name %></li>
+  		<li><%= @pet.followers %></li>		
+  	</ul>
 
 
 
-<%= link_to 'Delete your Pet', pet_path(@pet), method: :delete  %>
+  <%= link_to 'Delete your Pet', pet_path(@pet), method: :delete  %></br>
 
-<%= link_to 'Edit', edit_pet_path(@pet) %>
+  <%= link_to 'Edit', edit_pet_path(@pet) %>
+</div>
 
+
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-12">
+                    <ul class="list-inline">
+                        <li>
+                        <%= link_to "CAT", cat_index_path, :class => "btn-social btn-outline" %>
+                            <i class="fa fa-fw fa-facebook"></i>
+                        </li>
+                        <li>
+                        <%= link_to "DOG", dog_index_path, :class => "btn-social btn-outline" %><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <%= link_to "OP", other_index_path, :class => "btn-social btn-outline" %><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:petstargram@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i>CON</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Andy Kim Webdev 2014
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
