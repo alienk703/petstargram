@@ -4,7 +4,7 @@
 
     <div class="field">
       <%= f.label :kind %><br>
-      <%= f.text_field :kind %>
+      <%= f.select :kind, ['Cat', 'Dog', 'Other'] %>
     </div>
     <div class="field">
       <%= f.label :name %><br>
@@ -23,7 +23,7 @@
       <%= f.text_field :instagram  %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit :submit %>
     </div>
   <% end %>
 </div>

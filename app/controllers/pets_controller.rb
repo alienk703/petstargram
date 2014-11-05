@@ -2,8 +2,8 @@ class PetsController < ApplicationController
 
 	def index
 		@pets = Pet.images
-		@profiles = Pet.profile
-		@fans = Pet.followers
+		# @profiles = Pet.profile
+		# @fans = Pet.followers
 
 	end
 
@@ -42,10 +42,7 @@ class PetsController < ApplicationController
 
 	private
 	def pet_params
-		params.require(:pet).permit(:instagram_id, :kind, :name, :followers, :image_url)
+		params.require(:pet).permit(:instagram, :kind, :name, :followers, :image_url)
 	end
-
-
-
 
 end

@@ -1,13 +1,12 @@
 <div class="newpet">  
   <h1>Pet List</h1>
   	<ul>
-  		<li><%= image_tag( @pet.name ) do %></li>
-  		<% end %>
+ 
   		<li><%= @pet.name %></li>
   		<li><%= @pet.followers %></li>		
   	</ul>
 
-
+ 
 
   <%= link_to 'Delete your Pet', pet_path(@pet), method: :delete  %></br>
 

@@ -6,6 +6,7 @@ class OtherController < ApplicationController
 	end
 
 	def show
+    @pet = Pet.all
 	end
 
 
