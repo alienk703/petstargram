@@ -10,10 +10,10 @@ http://radiant-fjord-7105.herokuapp.com/
 
 No particular download is required to view this website.
 
-## Ruby 2.1.2
-## Rails 4.1.6
-## Bootstrap-Sass 3.2.0
-## Devise
+# Ruby 2.1.2
+# Rails 4.1.6
+# Bootstrap-Sass 3.2.0
+# Devise
 
 ### How to Use
 1. No sign up necessary to view pets
