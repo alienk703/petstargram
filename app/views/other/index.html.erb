@@ -53,7 +53,7 @@
 <div class="other">
   <% @pet.where(:kind => "other").order(followers: :desc).each do |o| %>
     <div class="otherfollow">
-    <%= link_to(image_tag(o.image_url), o.instagram) %>
+    <%= image_tag(o.image_url) %>
   	<p>Name: <%= o.name %></p>
   	<p>Followers: <%= o.followers %></p>
   <% end %>
