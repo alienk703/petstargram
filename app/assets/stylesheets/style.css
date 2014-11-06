@@ -2,12 +2,37 @@
   box-sizing:border-box;
 }
 
-.newpet {
+.login {
   background-color: rgb(24, 188, 156);
-  text-align: center;
+  margin: 3em auto;
+  padding: 1em;
+  width: 25em;
+  height: 20em;
   border-radius: 1em;
+  text-align: center;
+}
+
+.retrieve {
+  background-color: rgb(44, 62, 80);
   margin: 0 auto;
   padding: 1em;
+  width: 25em;
+  height: 5em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+/*.newpet {
+  background-color: rgb(24, 188, 156);
+  text-align: center;
+  margin: 0 auto;
+  width: 25em;
+  padding: 1em;
+}*/
+
+.newpet li {
+  text-align: center;
+  list-style-type: none;
 }
 
 /*INDIVIDUAL PAGE*/

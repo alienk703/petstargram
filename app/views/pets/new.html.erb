@@ -1,9 +1,10 @@
-<div class="newpet">
+<div class="login">
+  <body background="http://i.imgur.com/zCXdZqQ.jpg">
   <%= form_for(@pet) do |f| %>
 
     <div class="field">
       <%= f.label :kind %><br>
-      <%= f.select :kind, ['Cat', 'Dog', 'Other'] %>
+      <%= f.select :kind, ['cat', 'dog', 'other'] %>
     </div>
     <div class="field">
       <%= f.label :name %><br>

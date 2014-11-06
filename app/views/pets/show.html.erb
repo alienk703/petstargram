@@ -1,18 +1,11 @@
-<div class="newpet">  
+<div class="login">  
+  <body background="http://i.imgur.com/zCXdZqQ.jpg" >  
   <h1>Pet List</h1>
-  	<ul>
- 
-  		<li><%= @pet.name %></li>
-  		<li><%= @pet.followers %></li>		
-  	</ul>
-
- 
-
-  <%= link_to 'Delete your Pet', pet_path(@pet), method: :delete  %></br>
-
-  <%= link_to 'Edit', edit_pet_path(@pet) %>
+  	<%= @pet.name %><br>
+  	<%= @pet.followers %><br>
+    <%= link_to 'Delete your Pet', pet_path(@pet), method: :delete  %></br>
+    <%= link_to 'Edit', edit_pet_path(@pet) %>
 </div>
-
 
 <footer class="text-center">
     <div class="footer-above">
