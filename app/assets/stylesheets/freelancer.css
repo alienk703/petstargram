@@ -203,6 +203,7 @@ section.success {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1em;
     font-weight: 700;
+        padding-top: 1em;
 }
 
 #misc .intro-text .skills {
