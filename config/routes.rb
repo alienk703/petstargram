@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :cat
   resources :dog
   resources :other
+  resources :mypet
 
 
   # The priority is based upon order of creation: first created -> highest priority.

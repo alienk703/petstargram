@@ -1,0 +1,38 @@
+<div class="login">
+  <body background="http://i.imgur.com/zCXdZqQ.jpg">
+    <%= if @mypet.errors.any?%>
+      <div id="error_explanation">
+        <h2><%= pluralize(@mypet.errors.count, "error") %>
+          prohibited this pet from being saved:</h2>
+
+          <ul>
+            <% @mypet.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+      </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :age %><br>
+        <%= f.text_field :age %>
+      </div>
+      <div class="field">
+        <%= f.label :location %><br>
+        <%= f.text_field :location %>
+      </div>
+      <div class="field">
+        <%= f.label :bio %><br>
+        <%= f.text_area :bi0 %>
+      </div>
+      <div class="field">
+        <%= f.label :image_url %><br>
+        <%= f.text_field :image_url %>
+      </div>
+    <% end %>
+</div>      
+             
