@@ -1,0 +1,44 @@
+<div class="login">  
+  <body background="http://i.imgur.com/zCXdZqQ.jpg" >  
+  <h1>Pet List</h1>
+    <%= @mypet.name %><br>
+    <%= @mypet.age %><br>
+    <%= @mypet.location %><br>
+    <%= link_to 'Delete your Pet', mypet_path(@mypet), method: :delete  %></br>
+    <%= link_to 'Edit', edit_mypet_path(@mypet) %>
+</div>
+
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-12">
+                    <ul class="list-inline">
+                        <li>
+                        <%= link_to "CAT", cat_index_path, :class => "btn-social btn-outline" %>
+                            <i class="fa fa-fw fa-facebook"></i>
+                        </li>
+                        <li>
+                        <%= link_to "DOG", dog_index_path, :class => "btn-social btn-outline" %><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <%= link_to "OP", other_index_path, :class => "btn-social btn-outline" %><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:petstargram@gmail.com" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i>CON</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Andy Kim Webdev 2014
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
