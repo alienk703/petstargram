@@ -64,38 +64,18 @@
   text-align: center;
 }
 
-/*.mypet img {
-  margin-top: 2em;
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 50%;
-  height: auto;
-  width: auto;
-}
-
-.mypetlist {
-  margin: 3em 1em 1em 1em;
-  text-align: center;
-  max-width: 25em;
-  max-height: 40em;
-  border: red solid;
-
-}*/
 
 /*INDIVIDUAL PAGE*/
-
 .mypet img {
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
   height: auto;
   width: auto;
-/*  padding-top: 2em;*/
 }
 
 .mypetlist {
   margin: 1em 2em;
-  border: red solid;
   padding-top: 1em;
   line-height: 80%;
 }

@@ -1,7 +1,7 @@
 class MypetsController < ApplicationController
 
   def index
-    @mypet = Mypet.all
+    @mypets = Mypet.all
   end
 
   def new
@@ -17,9 +17,11 @@ class MypetsController < ApplicationController
   end
 
   def create
-    @mypet = Mypet.new mypet_params
+    @mypet = Mypet.new(mypet_params.merge(user_id: current_user.id))
     if @mypet.save
       redirect_to @mypet
+    else
+      render :new
     end
   end
 
@@ -27,6 +29,8 @@ class MypetsController < ApplicationController
     @mypet = Mypet.find( params[:id] )
     if @mypet.update(mypet_params)
       redirect_to @mypet
+    else
+      render :edit
     end
   end
 
