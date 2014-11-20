@@ -4,9 +4,9 @@
     <%= @mypet.name %><br>
     <%= @mypet.age %><br>
     <%= @mypet.location %><br>
-    <%= link_to 'Delete your Pet', mypet_path(@mypet), method: :delete  %></br>
-    <%= link_to 'Edit', edit_mypet_path(@mypet) %></br>
-    <%= link_to 'Goto My Pets', mypets_path %>
+    <!%= link_to 'Delete your Pet', mypet_path(@mypet), method: :delete  %></br>
+    <!%= link_to 'Edit', edit_mypet_path(@mypet) %></br>
+    <%= link_to 'Goto My Pets', mypets_path, :class => "logbutton" %>
 </div>
 
 <footer class="text-center">
