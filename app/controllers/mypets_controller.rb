@@ -17,7 +17,7 @@ class MypetsController < ApplicationController
   end
 
   def create
-    @mypet = Mypet.new(mypet_params.merge(user_id: current_user.id))
+    @mypet = Mypet.new(mypet_params)
     if @mypet.save
       redirect_to @mypet
     else
