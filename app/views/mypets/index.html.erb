@@ -53,10 +53,8 @@
     </div>
 </nav>
 
-
-
 <div class="mypet">
-  <% @mypets.each do |m| %>
+  <% @mypet.each do |m| %>
       <%= link_to image_tag m.image_url %></br>
     <div class="mypetlist">
       <p>Name: <%= m.name %></p></br>
