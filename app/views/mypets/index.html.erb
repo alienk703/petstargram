@@ -31,7 +31,7 @@
                     <%= link_to 'Other Pets', other_index_path %>
                 </li>
                 <li class="page-scroll">
-                    <%= link_to 'My Pets', other_index_path %>
+                    <%= link_to 'My Pets', mypets_path %>
                 </li>
                 <li class="page-scroll">
                     <a href="mailto:petstargram@gmail.com">Contact</a>
@@ -55,12 +55,14 @@
 
 
 
-<div class="cats">
-  <% @pet.where(:kind => "cat").order(followers: :desc).each do |c| %>
-  <div class="catfollow">
-        <%= link_to(image_tag(c.image_url), c.instagram) %>
-      <p>Name: <%= c.name %></p>
-      <p>Followers: <%= c.followers %></p>
+<div class="mypet">
+  <% @mypet.each do |m| %>
+  <div class="mypetlist">
+        <%= link_to image_tag m.image_url %>
+      <p>Name: <%= m.name %></p>
+      <p>Age: <%= m.age%></p>
+      <p>Location: <%= m.location%></p>
+      <p>Bio: <%= m.bio%></p>
     <% end %>
     </div>
 </div>

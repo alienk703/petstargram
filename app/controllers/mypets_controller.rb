@@ -1,7 +1,7 @@
 class MypetsController < ApplicationController
 
   def index
-    @mypets = Mypet.images
+    @mypet = Mypet.all
   end
 
   def new
