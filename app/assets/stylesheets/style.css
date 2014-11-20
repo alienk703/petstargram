@@ -54,7 +54,6 @@
   top:1px;
 }
 
-
 .retrieve {
   background-color: rgb(44, 62, 80);
   margin: 0 auto;
@@ -65,28 +64,59 @@
   text-align: center;
 }
 
-/*.newpet {
-  background-color: rgb(24, 188, 156);
-  text-align: center;
-  margin: 0 auto;
-  width: 25em;
-  padding: 1em;
-}*/
-
-.newpet li {
-  text-align: center;
-  list-style-type: none;
+/*.mypet img {
+  margin-top: 2em;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
 }
 
+.mypetlist {
+  margin: 3em 1em 1em 1em;
+  text-align: center;
+  max-width: 25em;
+  max-height: 40em;
+  border: red solid;
+
+}*/
+
 /*INDIVIDUAL PAGE*/
-.cats {
+
+.mypet img {
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+/*  padding-top: 2em;*/
+}
+
+.mypetlist {
+  margin: 1em 2em;
+  border: red solid;
+  padding-top: 1em;
+  line-height: 80%;
+}
+
+.mypetlist a{
+  color: #18bc9c;
+}
+
+.editpet p{
+  color: black;
+  padding-bottom: 1em;
+}
+
+.cats, .dogs, .other, .mypet {
    border-radius: 20px;
    text-align: center;
    display: block;
    margin-top: 60px;
 }
 
-.cats img{
+.cats img, .dogs img, .other img{
   max-width: 300px;
   max-height: 300px;
 	border-radius: 50%;
@@ -94,48 +124,14 @@
 	width: auto;
 }
 
-.catfollow {
+.catfollow, .dogfollow, .otherfollow {
   padding-top: 2em;
 }
 
-.dogs {
-   border-radius: 20px;
-   text-align: center;
-   display: block;
-   margin-top: 60px;
-}
-
-.dogs img{
-	border-radius: 50%;
-	height: 300px;
-	width: 300px;
-}
-
-.dogfollow {
-  padding-top: 2em;
-}
-
-.other {
-   border-radius: 20px;
-   text-align: center;
-   display: block;
-   margin-top: 60px;
-}
-
-.other img{
-	border-radius: 50%;
-	height: 300px;
-	width: 300px;
-}
-
-.otherfollow {
-  padding-top: 2em;
-}
 
 .ownpet {
   border-radius: 50%;
   height: 60%;
   width: 60%;
-
 }
 

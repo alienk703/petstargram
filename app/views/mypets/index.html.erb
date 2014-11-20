@@ -57,14 +57,16 @@
 
 <div class="mypet">
   <% @mypet.each do |m| %>
-  <div class="mypetlist">
-        <%= link_to image_tag m.image_url %>
-      <p>Name: <%= m.name %></p>
-      <p>Age: <%= m.age%></p>
-      <p>Location: <%= m.location%></p>
-      <p>Bio: <%= m.bio%></p>
-    <% end %>
-    </div>
+      <%= link_to image_tag m.image_url %></br>
+    <div class="mypetlist">
+      <p>Name: <%= m.name %></p></br>
+      <p>Age: <%= m.age%></p></br>
+      <p>Location: <%= m.location%></p></br>
+      <p>Bio: <%= m.bio%></p></br>
+      <%= link_to 'Delete your Pet', mypet_path(@mypet), method: :delete  %></br>
+      <%= link_to 'Edit', edit_mypet_path(@mypet) %></br>
+    </div>  
+  <% end %>
 </div>
 
 <footer class="text-center">
