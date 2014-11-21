@@ -2,8 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   root "home#index"
-
-  resources :pets 
+  
   resources :cat
   resources :dog
   resources :other
